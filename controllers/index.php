@@ -23,16 +23,14 @@ $products = [
     ],
 ];
 
-$subtotals = array();
 function subTotal($price, $amount) {
     $subtotal = $price * $amount;
-    //array_push($subtotals, $subtotal);
     return $subtotal;
 }
 
-function total($subtotalsArr) {
-    $total;
-    array_reduce($subtotalsArr, );
+function total($total, $product) {
+    $total += subTotal($product['price'], $product['amount']);
+    return $total;
 }
 
-require "index.view.php";
+require "./views/index.view.php";
