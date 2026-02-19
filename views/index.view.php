@@ -13,8 +13,8 @@
             <tr>
                 <td><?= $product['name']?></td>
                 <td class="amount product-price"><?= $product['price']?></td>
-                <td><input class="product-quantity" value="<?= $product['amount']?>"></input></td>
-                <td class="amount product-totalcost"><?= subTotal($product['price'], $product['amount']); ?></td>
+                <td><input class="product-quantity" value="<?= $product['quantity']?>"></input></td>
+                <td class="amount product-totalcost"><?= subTotal($product['price'], $product['quantity']); ?></td>
             </tr>
         <?php endforeach ?>
         <tr>
