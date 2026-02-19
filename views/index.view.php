@@ -1,4 +1,5 @@
-<?php include "/partials/header.php" ?>
+<?php include 'partials/header.php' ?>
+<?php include 'partials/nav.php' ?>
 
 <main>
     <table id="grocery-table">
@@ -22,4 +23,4 @@
         </tr>
     </table>
 </main>
-<?php include "/partials/footer.php" ?>
+<?php include 'partials/footer.php' ?>

@@ -33,4 +33,4 @@ function total($total, $product) {
     return $total;
 }
 
-require "./views/index.view.php";
+require './views/index.view.php';

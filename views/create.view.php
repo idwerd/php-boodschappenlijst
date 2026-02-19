@@ -1,5 +1,5 @@
-<?php include "/partials/header.php" ?>
-
+<?php include 'partials/header.php' ?>
+<?php include 'partials/nav.php' ?>
 <main>
 
     <form method="POST">
@@ -13,4 +13,4 @@
 
 </main>
 
-<?php include "/partials/footer.php" ?>
+<?php include 'partials/footer.php' ?>

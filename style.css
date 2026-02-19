@@ -1,9 +1,41 @@
 body {
     font-family: sans-serif;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+nav {
+    height: 50px;
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px; 
+    margin-bottom: 10px;
+    align-content: space-evenly;
+}
+nav a {
+    background-color: cadetblue;
+    padding: 20px;
+    border-radius: 5px;
+    color: black;
+}
+.active {
+    font-weight: bold;
 }
 
-table {
+main {
+    width: 800px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+#grocery-table {
     border-collapse: collapse;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 430px;
 }
 
 th {
@@ -17,4 +49,8 @@ th {
 th, td {
     border: 1px solid #888;
     padding: 10px;
+}
+
+.active {
+    font-weight: bold;
 }
