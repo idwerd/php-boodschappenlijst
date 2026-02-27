@@ -1,8 +1,9 @@
 body {
-    font-family: sans-serif;
+    font-family: "Work Sans", sans-serif;
     display: block;
     margin-left: auto;
     margin-right: auto;
+    
 }
 nav {
     height: 50px;
@@ -10,15 +11,21 @@ nav {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 10px; 
+    margin-top: 50px; 
     margin-bottom: 10px;
     align-content: space-evenly;
 }
 nav a {
-    background-color: cadetblue;
+    background-color: rgb(91, 119, 118);
     padding: 20px;
     border-radius: 5px;
-    color: black;
+    color: white;
+    box-shadow: 0px 2px 5px 0px rgb(154, 172, 171);
+    text-decoration: none;
+    
+}
+nav a:hover {
+    padding: 22px;
 }
 .active {
     font-weight: bold;
@@ -29,15 +36,16 @@ main {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 50px;
 }
 #grocery-table {
     border-collapse: collapse;
-    display: block;
+    font-size: 17px;
+}
+table {
     margin-left: auto;
     margin-right: auto;
-    width: 430px;
 }
-
 th {
     text-align: left;
 }
@@ -47,10 +55,75 @@ th {
 }
 
 th, td {
-    border: 1px solid #888;
     padding: 10px;
 }
+th, th .product-quantity {
+    background-color: rgb(154, 172, 171);
+}
+tr {
+    border-bottom: 1px solid #888;
+}
+#total-row {
+    border-bottom: none;
+}
+tr:nth-child(even) {
+    background-color: rgba(154, 172, 171, 0.5);
+}
+tr:nth-child(even) input {
+    background-color: white;
+}
+tr:nth-child(odd) input {
+    background-color: rgba(154, 172, 171, 0.5);
+}
+input {
+    border-radius: 5px;
+}
 
-.active {
-    font-weight: bold;
+tr:hover {
+    background-color: #ddd;
+}
+.product-quantity {
+    border: none;
+    text-align: center;
+    font-size: 17px;
+    width: 75px;
+}
+    
+
+form {
+    font-size: 17px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+}
+form input {
+    border: none;
+    background-color: rgba(154, 172, 171, 0.5);
+    padding: 10px;
+    display: block;
+    box-shadow: 0px 2px 5px 0px rgb(154, 172, 171);
+    margin-bottom: 20px;
+    width: 300px;
+    box-sizing: border-box;
+}
+form button {
+    background-color: rgb(91, 119, 118);
+    padding: 20px;
+    border-radius: 5px;
+    color: white;
+    font-size: 17px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: none;
+    box-shadow: 0px 2px 5px 0px rgb(154, 172, 171);
+}
+form button:hover {
+    padding: 22px;
+}
+
+.error-message {
+    font-size: 12px;
+    color: red;
 }

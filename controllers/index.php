@@ -1,9 +1,9 @@
 <?php
 
-require 'Database.php';
 $config = require('config.php');
 $db = new Database($config['database']);
-$products = $db->query("select * from groceries")->fetchAll();
+
+$products = $db->query("select * from groceries")->get();
 
 function subTotal($price, $quantity) {
     $subtotal = $price * $quantity;
