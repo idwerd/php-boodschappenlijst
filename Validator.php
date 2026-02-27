@@ -12,7 +12,6 @@ class Validator {
     }
 
     public static function decimal($value, $min, $max) {
-
         return $value >= $min && $value <= $max;
     }
 }
